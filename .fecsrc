@@ -1,0 +1,20 @@
+{
+    eslint: {
+        globals: {
+            feConfig: true,
+            Enums: true
+        },
+        rules: {
+            "brace-style": [2, "1tbs"],
+            "fecs-valid-jsdoc": "off",
+            "fecs-esnext-ext": "off",
+            // 对es6 spread计算符不支持，暂关掉
+            "fecs-use-method-definition": 'off',
+            // 有时会用blueBird的 Promise.props
+            "fecs-use-standard-promise": "warn",
+            "babel/object-curly-spacing": "off",
+            // action方法一般全是大写字母；
+            "babel/new-cap": "off"
+        }
+    }
+}
